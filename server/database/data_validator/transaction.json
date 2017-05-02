@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "integer",
+      "enum": [0,1]
+    },
+    "description": {
+      "type": "string"
+    },
+    "active": {
+      "type": "integer",
+      "enum": [0,1]
+    },
+    "timestamp": {
+      "type": "integer"
+    }
+    "to_userid": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "name",
+    "type",
+    "description",
+    "active",
+    "timestamp",
+    "to_userid"
+  ]
+}
